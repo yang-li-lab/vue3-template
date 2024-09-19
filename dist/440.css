@@ -1,0 +1,39 @@
+
+.camera[data-v-46caa4f7] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.video-preview[data-v-46caa4f7], .canvas-preview[data-v-46caa4f7] {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+.controls[data-v-46caa4f7] {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.button[data-v-46caa4f7] {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5em;
+  cursor: pointer;
+  margin: 0 20px;
+}
+.button.capture[data-v-46caa4f7] {
+  color: #4caf50; /* Green */
+}
+.button.record[data-v-46caa4f7] {
+  color: #f44336; /* Red */
+}
+
