@@ -10,5 +10,9 @@ module.exports = merge(common, {
     new CleanWebpackPlugin(),
     new webpack.DefinePlugin({
       process: JSON.stringify(envConfig)
-    })]
+    })],
+    output: {
+    publicPath: '/vue3-template/'
+  },
+
 })

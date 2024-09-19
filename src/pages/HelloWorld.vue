@@ -1,4 +1,5 @@
  <template>
+  <button @click="initCamera">拍照</button>
   <div class="camera">
     <video ref="video" autoplay playsinline class="video-preview"></video>
     <canvas ref="canvas" class="canvas-preview"></canvas>
@@ -136,7 +137,7 @@ export default {
       this.imageUrl = URL.createObjectURL(new Blob([data.buffer], { type: 'image/png' }));
 
       }catch(err) {
-        console.log(err.message)
+        console.log('err',err.message)
       }
       
     },
